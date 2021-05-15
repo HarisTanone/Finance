@@ -45,100 +45,10 @@
   }
   .card-b{
     position: relative;
-    padding-top: 186px;
+    top: -1rem;
   }
-  .paddingt{
-    padding-top: 220px;
-  }
-  @media(max-width: 600px){
-    .text-banner {
-      align-self: center;
-      position: relative;
-      padding-top: 138px;
-    }
-    .card-b {
-      position: relative;
-      padding-top: 118px;
-    }
-    .paddingt {
-      padding-top: 562px;
-    }
-  }
-  @media(max-width: 535px){
-    .paddingt {
-      padding-top: 600px;
-    }
-  }
-  @media(max-width: 484px){
-    .text-banner {
-      align-self: center;
-      position: relative;
-      padding-top: 52px;
-    }
-    .paddingt {
-      padding-top: 610px;
-    }
-  }
-  @media(max-width: 479px){
-    .card-b {
-      position: relative;
-      padding-top: 95px;
-    }
-    .paddingt {
-      padding-top: 510px;
-    }
-  }
-  @media(max-width: 414px){
-    .card-b {
-      position: relative;
-      padding-top: 238px;
-    }
-    .paddingt {
-      padding-top: 520px;
-    }
-  }
-  @media(max-width: 410px){
-    .paddingt {
-      padding-top: 570px;
-    }
-  }
-  @media(max-width: 403px){
-    .card-b {
-      position: relative;
-      padding-top: 60px;
-    }
-    .paddingt {
-      padding-top: 585px;
-    }
-  }
-  @media(max-width: 387px){
-    .paddingt {
-      padding-top: 620px;
-    }
-  }
-  @media(max-width: 385px){
-    .card-b {
-      position: relative;
-      padding-top: 115px;
-    }
-    .paddingt {
-      padding-top: 650px;
-    }
-  }
-  @media(max-width: 375px){
-    .card-b {
-      position: relative;
-      padding-top: 115px;
-    }
-  }
-  @media(max-width: 361px){
-    .card-b {
-      position: relative;
-      padding-top: 88px;
-    }
-    .paddingt {
-      padding-top: 680px;
-    }
+  #s-card{
+    position: relative;
   }
   .warna_judul, .fab{
     color: #00AB6B;
@@ -165,9 +75,9 @@
   footer{
     background-color: #45505F;
   }
-  section {
+/*  section {
     padding-top: 73px;
-  }
+  }*/
   </style>
 </head>
 <body>
@@ -216,22 +126,16 @@
         <button class="btn btn-lg btn-custom">GET A QUOTE</button>
       </div>
     </div>
-    <!-- <div class="container-fluid"> -->
-      <div class="row card-b">
-        <div class="pb-4 col-lg-3 col-md-6 col-sm-6 col-6">
-          <div class="card border-0 shadow">
-            <h2 class="text-center pt-4">
-              <i class="fab fa-affiliatetheme fa-lg"></i>
-            </h2>
-            <div class="card-body">
-             <strong>Professional Advice</strong>
-             <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-             tempor incididunt ut labore et dolore magna aliqua.</p>
-           </div>
-           <span class="border-bottom"></span>
-         </div>
-       </div>
-       <div class="pb-4 col-lg-3 col-md-6 col-md-6 col-6">
+  </div>
+</div>
+</section>
+<!-- end banner -->
+
+<!-- banner card -->
+<section id="s-card">
+  <div class="container">
+    <div class="row card-b">
+      <div class="pb-4 col-lg-3 col-md-6 col-sm-6 col-6">
         <div class="card border-0 shadow">
           <h2 class="text-center pt-4">
             <i class="fab fa-affiliatetheme fa-lg"></i>
@@ -270,16 +174,27 @@
      <span class="border-bottom"></span>
    </div>
  </div>
+ <div class="pb-4 col-lg-3 col-md-6 col-md-6 col-6">
+  <div class="card border-0 shadow">
+    <h2 class="text-center pt-4">
+      <i class="fab fa-affiliatetheme fa-lg"></i>
+    </h2>
+    <div class="card-body">
+     <strong>Professional Advice</strong>
+     <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+     tempor incididunt ut labore et dolore magna aliqua.</p>
+   </div>
+   <span class="border-bottom"></span>
+ </div>
 </div>
-<!-- </div> -->
 </div>
 </div>
 </section>
-<!-- end banner -->
+<!-- end banner card -->
 
 <!-- About -->
 <!-- about -->
-<section id="about" class="paddingt">
+<section id="about">
   <div class="container">
     <div class="row pt-4 pb-4">
       <div class="col-lg-5">
