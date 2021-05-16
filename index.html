@@ -15,9 +15,109 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
+
 
   <title>Finance Web Design</title>
+  <style type="text/css">
+    html {
+      scroll-behavior: smooth;
+    }
+    body{
+      font-family: 'Poppins', sans-serif;
+    }
+    h1,h2,h3,h4,h5,h6{
+      /*font-weight: bold;*/
+      font-family: 'Rubik', sans-serif;
+    }
+    .navbar{
+      height: 73px;
+    }
+    .banner-bg{
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/img/banner.jpg');
+      height: 100vh;
+      min-height: 500px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .text-banner{
+      align-self: center;
+      position: relative;
+      padding-top: 200px;
+    }
+    .btn-custom{
+      color: white;
+      background-color: #00AB6B;
+      border-radius: 22px;
+    }
+    .border-bottom {
+      border-bottom: 12px solid #00AB6B!important;
+      border-radius: 5px;
+    }
+    .card-b{
+      position: relative;
+      top: -1rem;
+    }
+    #s-card{
+      position: relative;
+    }
+    .warna_judul, .fab, .far, .fas{
+      color: #00AB6B;
+    }
+    .warna_bg{
+      background-color: #F5FFFC;
+    }
+    .progress-bar{
+      background-color: #00AB6B;
+    }
+    .c-footer{
+      position: relative;
+      margin-bottom: -62px;
+    }
+    a{
+      color: white;
+      text-decoration: none;
+    }
+    .navbar-nav .nav-item:hover .nav-link {
+      color: #00AB6B;
+      text-decoration: underline;
+      text-decoration-thickness: 6px;
+    }
+    .navbar-expand-lg{
+      transition:500ms ease;
+      background:transparent;
+      color: white!important;
+    }
+    .navbar-expand-lg.scrolled{
+      background-color: #f8f9fa!important;
+    }
+    @media (min-width: 800px) and (max-width: 850px) {
+      .nav-item{
+        background-color: black !important;
+        padding-left: 10px;
+      }
+      .nav-item.scrolled{
+        background-color: white !important;
+        padding-left: 10px;
+      }
+    }
+    @media only screen and (max-width:768px){
+      .nav-item{
+        background-color: black !important;
+        padding-left: 10px;
+      }
+      .nav-item.scrolled{
+        background-color: white !important;
+        padding-left: 10px;
+      }
+    }
+    footer{
+      background-color: #45505F;
+    }
+    section {
+      padding-top: 53px;
+    }
+  </style>
 </head>
 <body>
 
@@ -67,6 +167,23 @@
 </div>
 </nav>
 <!-- end navbar -->
+
+<!-- banner -->
+<!-- <section id="banner">
+  <div class="banner-bg">
+   <div class="container">
+    <div class="row align-self-center">
+      <div class="col-6 text-white text-banner">
+        <h1>Financial Solution to Advence Your Business</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim, adipisicing elit, sed do.</p>
+        <button class="btn btn-lg btn-custom">GET A QUOTE</button>
+      </div>
+    </div>
+  </div>
+</div>
+</section> -->
+<!-- end banner -->
 
 <!-- banner card -->
 <div id="s-card">
@@ -474,7 +591,27 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-<script src="assets/js/script.js"></script>
-
+<script type="text/javascript">
+  AOS.init();
+  $(document).ready(function(){       
+    var scroll_pos = 0;
+    $(document).scroll(function() { 
+      scroll_pos = $(this).scrollTop();
+      if(scroll_pos > 70) {
+        $('nav').toggleClass('scrolled',  scroll_pos > 70)
+        $('.nav-item').toggleClass('scrolled',  scroll_pos > 70)
+        $('.nav-link').css('color', '#000');
+        $('.navbar-brand').css('color','#000')
+        $('.fa-bars').css('color', '#000');
+      } else {
+        $('.nav-link').css('color', '#fff');
+        $('nav').removeClass('scrolled')
+        $('.nav-item').removeClass('scrolled')
+        $('.navbar-brand').css('color','#fff')
+        $('.fa-bars').css('color', '#fff');
+      }
+    });
+  });
+</script>
 </body>
 </html>
