@@ -1,0 +1,98 @@
+  html {
+    scroll-behavior: smooth;
+  }
+  body{
+    font-family: 'Poppins', sans-serif;
+  }
+  h1,h2,h3,h4,h5,h6{
+    /*font-weight: bold;*/
+    font-family: 'Rubik', sans-serif;
+  }
+  .navbar{
+    height: 73px;
+  }
+  .banner-bg{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/banner.jpg');
+    height: 100vh;
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .text-banner{
+    align-self: center;
+    position: relative;
+    padding-top: 200px;
+  }
+  .btn-custom{
+    color: white;
+    background-color: #00AB6B;
+    border-radius: 22px;
+  }
+  .border-bottom {
+    border-bottom: 12px solid #00AB6B!important;
+    border-radius: 5px;
+  }
+  .card-b{
+    position: relative;
+    top: -1rem;
+  }
+  #s-card{
+    position: relative;
+  }
+  .warna_judul, .fab, .far, .fas{
+    color: #00AB6B;
+  }
+  .warna_bg{
+    background-color: #F5FFFC;
+  }
+  .progress-bar{
+    background-color: #00AB6B;
+  }
+  .c-footer{
+    position: relative;
+    margin-bottom: -62px;
+  }
+  a{
+    color: white;
+    text-decoration: none;
+  }
+  .navbar-nav .nav-item:hover .nav-link {
+    color: #00AB6B;
+    text-decoration: underline;
+    text-decoration-thickness: 6px;
+  }
+  .navbar-expand-lg{
+    transition:500ms ease;
+    background:transparent;
+    color: white!important;
+  }
+  .navbar-expand-lg.scrolled{
+    background-color: #f8f9fa!important;
+  }
+  @media (min-width: 800px) and (max-width: 850px) {
+    .nav-item{
+      background-color: black !important;
+      padding-left: 10px;
+    }
+    .nav-item.scrolled{
+      background-color: white !important;
+      padding-left: 10px;
+    }
+  }
+  @media only screen and (max-width:768px){
+    .nav-item{
+      background-color: black !important;
+      padding-left: 10px;
+    }
+    .nav-item.scrolled{
+      background-color: white !important;
+      padding-left: 10px;
+    }
+  }
+  footer{
+    background-color: #45505F;
+  }
+  section {
+    padding-top: 53px;
+  }
